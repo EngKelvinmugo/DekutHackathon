@@ -1,0 +1,105 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .sign-up-layout {
+    display: flex;
+  }
+  
+  /* Sidebar styles */
+  .side-nav {
+    width: 20%;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .side-nav .nav-item {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .side-nav .nav-item.active {
+    color: red;
+  }
+  
+  .nav-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .close-icon, .menu-icon {
+    cursor: pointer;
+  }
+  
+  .main-content {
+    width: 80%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sign-up-container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .welcome-image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .sign-up-form {
+    text-align: left;
+  }
+  
+  .sign-up-form label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .sign-up-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .sign-up-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .sign-up-btn:hover {
+    background-color: darkred;
+  }
+  

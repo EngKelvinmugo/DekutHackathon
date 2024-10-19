@@ -1,0 +1,110 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.emergency-layout {
+  display: flex;
+}
+
+/* Sidebar styling */
+.side-nav {
+  width: 20%;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  padding: 20px;
+}
+
+.side-nav .nav-item {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.side-nav .nav-item.active {
+  color: red;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-icon, .menu-icon {
+  cursor: pointer;
+}
+
+.main-content {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sos-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Fill the available height */
+}
+
+.sos-instructions {
+  font-size: 14px;
+  color: #333;
+}
+
+.sos-button {
+  background-color: red;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  color: white;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.emergency-text {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.emergency-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.emergency-item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.emergency-item span {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+}

@@ -1,0 +1,220 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Layout */
+.report-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar Navigation */
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 15px;
+  width: 200px;
+  height: 100vh;
+  transition: width 0.3s ease;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.side-nav.collapsed {
+  width: 80px;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.menu-icon,
+.close-icon {
+  cursor: pointer;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.nav-item.active,
+.nav-item:hover {
+  background-color: #f0f0f0;
+  color: red;
+}
+
+.nav-item span {
+  margin-left: 10px;
+}
+
+.nav-item svg {
+  flex-shrink: 0;
+}
+
+/* Report Content */
+.report-content {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+/* Location Bar */
+.location-bar {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.location-bar .edit-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Report Form */
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form Row */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Input Group */
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input-group label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  border-color: #ff4b5c;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Icon Input */
+.icon-input {
+  display: flex;
+  align-items: center;
+}
+
+.icon-input svg {
+  margin-right: 10px;
+}
+
+/* Radio Group */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Media Button */
+.media-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ff4b5c;
+  color: white;
+  padding: 10px 20px; /* Adjusted for medium size */
+  border-radius: 8px;
+  cursor: pointer;
+  width: 30%;
+  border: none;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.media-btn:hover {
+  background-color: #e03e48;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #ff4b5c;
+  color: white;
+  padding: 10px 20px; /* Adjusted for medium size */
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 20%;
+}
+
+.submit-btn:hover {
+  background-color: #e03e48;
+}
+
+/* Terms Agreement */
+.terms label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .side-nav {
+    display: none;
+  }
+
+  .report-content {
+    padding: 20px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
