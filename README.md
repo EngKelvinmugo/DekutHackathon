@@ -1,1 +1,1 @@
-# DekutHackathon
+# Dekut Hackathon
