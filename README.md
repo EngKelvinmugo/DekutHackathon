@@ -1,1 +1,1 @@
-# Dekut Originfest Hackathon
+# Dekut Origin fest Hackathon
